@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - AVISA Automotive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            height: 2rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: nowrap; /* Changed from wrap to nowrap */
+        }
+
+        nav a {
+            color: #4B5563;
+            text-decoration: none;
+            transition: color 0.2s;
+            padding: 0.5rem;
+            white-space: nowrap;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #111827;
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #111827;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Partners Section */
+        .partners {
+            margin-top: 3rem;
+        }
+
+        .partner-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .partner-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #E5E7EB;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-content {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            nav {
+                gap: 1rem; /* Reduced gap for mobile */
+                justify-content: center;
+            }
+
+            nav a {
+                padding: 0.5rem 0.3rem; /* Reduced padding for mobile */
+                font-size: 0.9rem; /* Slightly smaller font size */
+            }
+
+            .partner-item {
+                justify-content: center;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.5rem;
+            }
+
+            nav {
+                gap: 0.5rem; /* Even smaller gap for very small screens */
+            }
+
+            nav a {
+                padding: 0.5rem 0.2rem; /* Further reduced padding */
+                font-size: 0.85rem; /* Even smaller font size */
+            }
+
+            .partner-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <img src="./assets/logo.png" alt="Avisa Automotive Logo" class="logo">
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="aboutavisa.html">About Us</a>
+                    <a href="#">Product</a>
+                    <a href="careeravisa.html">Career</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>About Us</h1>
+        <div class="content">
+            <p>AVISA is a homegrown automobile start-up motivated by immense need seen in society and the bustling streets of our country. Our Utility Electric scooter is first of our user-driven stints that are ready to run the markets especially for a cause. The research all began back three years ago where the founder took this problem statement and turned it into more than a college project.</p>
+            <p>Here and Avisa, we are welcoming young minds to learn and cause direct impact to the lifeliness of our cities - the street vendors, who instantaneously offer a plethora of items be it edible or non-edible utilities at affordable prices.</p>
+            <p>Here is your chance to avail someone you know with this efficient power and space packed electric scooter which is built to go beyond the extra mile.</p>
+        </div>
+
+        <div class="founder text-center mt-8">
+            <p class="font-bold">Paresh Mistry,</p>
+            <p>Founder</p>
+        </div>
+
+        <div class="partners">
+            <div class="partner-item">
+                <img src="./assets/iith.png" alt="ITIC logo" class="partner-logo"/>
+                <p>Supported By <strong>IIT Hyderabad</strong></p>
+            </div>
+            <div class="partner-item">
+                <img src="./assets/scitechs.png" alt="SCITECH Park logo" class="partner-logo"/>
+                <p>Supported by <strong>SCITECH Park, Pune</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>AVISA</strong> <span style="color: #1F2937">AUTOMOTIVE</span></p>
+        <p>Avisa Automotive Pvt Ltd. All rights reserved 2023</p>
+    </footer>
+</body>
+</html>
